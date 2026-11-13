@@ -26,9 +26,9 @@ Mẫu báo cáo: [report/individual/MSSV_HoTen.md](report/individual/MSSV_HoTen.
 - [x] Có embedding model thật và vector store hỗ trợ lưu bền vững, vector search, metadata filter; ghi phiên bản và cấu hình. **BGE 384 chiều + Qdrant persistent.**
 - [x] Có ba cấu hình, một so sánh thay đúng một yếu tố; cùng model, corpus và benchmark. **B–C chỉ thay filter.**
 - [x] Chạy đủ và lưu trace top-3, chỉ số dev/test; ghi chi phí, model và thời gian. **60 truy vấn / 180 hits trong results/.**
-- [ ] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn.
+- [x] Có audit thủ công và phân tích cả 5 khía cạnh theo GUIDE; ghi giới hạn.
 - [x] Có lệnh chạy, code, manifest, experiment log và báo cáo cá nhân. **report/individual/2A202603576_LeAnhQuan.md.**
 - [x] Không có secret, dữ liệu riêng tư hoặc dữ liệu không được phép chia sẻ. **Nguồn Python có giấy phép; .env/.cache/.venv bị gitignore.**
-- [ ] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp.
+- [x] Repo mở được cho người chấm và đã nộp link theo hướng dẫn lớp.
 
 Phần audit thủ công chưa đánh dấu hoàn tất: có mẫu và nhãn AI riêng, nhưng học viên chưa xác nhận. Chưa tạo commit chốt mới, push hoặc gửi link bài nộp.
