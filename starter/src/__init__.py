@@ -1,1 +1,1 @@
-"""Day 06 student starter: implementation required."""
+"""Day 06: reproducible semantic ingestion and retrieval benchmark."""

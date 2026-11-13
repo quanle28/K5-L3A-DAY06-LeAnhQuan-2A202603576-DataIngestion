@@ -1,0 +1,248 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "What type does ordinary division return, and which operators give floor division and the remainder?",
+    "expected_answer": "A float; // for floor division, % for the remainder.",
+    "gold_source_id": "python-introduction",
+    "gold_page": 1,
+    "evidence_quote": "Division (/) always returns a float. To do floor division and get an integer result you can use the // operator; to calculate the remainder you can use %::",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Can I replace a character of a Python string by assigning to its index?",
+    "expected_answer": "No. Strings are immutable; indexed assignment raises an error.",
+    "gold_source_id": "python-introduction",
+    "gold_page": 5,
+    "evidence_quote": "Python strings cannot be changed --- they are immutable. Therefore, assigning to an indexed position in the string results in an error::",
+    "type": "paraphrase",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Which negative index selects the last character, and why is it not negative zero?",
+    "expected_answer": "Use -1; -0 is the same as 0.",
+    "gold_source_id": "python-introduction",
+    "gold_page": 4,
+    "evidence_quote": "Indices may also be negative numbers, to start counting from the right:: >>> word[-1] # last character 'n' >>> word[-2] # second-last character 'o' >>> word[-6] 'P' Note that since -0 is the same as 0, negative indices start from -1.",
+    "type": "condition",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "If loops are nested, which loop does a break statement exit?",
+    "expected_answer": "The innermost enclosing for or while loop.",
+    "gold_source_id": "python-controlflow",
+    "gold_page": 2,
+    "evidence_quote": "The break statement breaks out of the innermost enclosing for or while loop.",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "In the control-flow chapter, does a loop's else clause run after a break terminates the loop?",
+    "expected_answer": "No; the else clause is not executed after break.",
+    "gold_source_id": "python-controlflow",
+    "gold_page": 2,
+    "evidence_quote": "In either kind of loop, the !else clause is **not** executed if the loop was terminated by a break.",
+    "type": "condition",
+    "filter": {
+      "chapter": "controlflow"
+    },
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Why can a list used as a function's default argument keep values between calls?",
+    "expected_answer": "The default is evaluated once, so a mutable default is shared by later calls.",
+    "gold_source_id": "python-controlflow",
+    "gold_page": 8,
+    "evidence_quote": "**Important warning:** The default value is evaluated only once. This makes a difference when the default is a mutable object such as a list, dictionary, or instances of most classes. For example, the following function accumulates the arguments passed to it on subsequent calls::",
+    "type": "paraphrase",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "What value comes back if a Python function reaches the end without an explicit return?",
+    "expected_answer": "None.",
+    "gold_source_id": "python-controlflow",
+    "gold_page": 7,
+    "evidence_quote": "* The return statement returns with a value from a function. !return without an expression argument returns None. Falling off the end of a function also returns None.",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "In the data-structures chapter, how can I append a single item at the end of a list?",
+    "expected_answer": "Call list.append(x).",
+    "gold_source_id": "python-datastructures",
+    "gold_page": 1,
+    "evidence_quote": ".. method:: list.append(x) :noindex: Add an item to the end of the list. Equivalent to a[len(a):] = [x].",
+    "type": "direct",
+    "filter": {
+      "chapter": "datastructures"
+    },
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "What does a.pop() remove and return when no index is supplied?",
+    "expected_answer": "The last item in the list.",
+    "gold_source_id": "python-datastructures",
+    "gold_page": 1,
+    "evidence_quote": "Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list.",
+    "type": "condition",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Which container is designed for efficient queue insertion and removal at both ends?",
+    "expected_answer": "collections.deque.",
+    "gold_source_id": "python-datastructures",
+    "gold_page": 2,
+    "evidence_quote": "To implement a queue, use collections.deque which was designed to have fast appends and pops from both ends.",
+    "type": "paraphrase",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Why can't a list be a dictionary key?",
+    "expected_answer": "Lists can be modified in place; dictionary keys must be immutable.",
+    "gold_source_id": "python-datastructures",
+    "gold_page": 6,
+    "evidence_quote": "Unlike sequences, which are indexed by a range of numbers, dictionaries are indexed by *keys*, which can be any immutable type; strings and numbers can always be keys. Tuples can be used as keys if they contain only strings, numbers, or tuples; if a tuple contains any mutable object either directly or indirectly, it cannot be used as a key. You can't use lists as keys, since lists can be modified in place using index assignments, slice assignments, or methods like list.append and list.extend.",
+    "type": "condition",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "How do I create an empty set, and what would empty braces create?",
+    "expected_answer": "Use set(); {} creates an empty dictionary.",
+    "gold_source_id": "python-datastructures",
+    "gold_page": 5,
+    "evidence_quote": "Curly braces or the set function can be used to create sets. Note: to create an empty set you have to use set(), not {}; the latter creates an empty dictionary, a data structure that we discuss in the next section.",
+    "type": "condition",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Why should a file be opened in a with block even when the code may raise an exception?",
+    "expected_answer": "The file is properly closed when the suite finishes, even on an exception.",
+    "gold_source_id": "python-inputoutput",
+    "gold_page": 5,
+    "evidence_quote": "It is good practice to use the with keyword when dealing with file objects. The advantage is that the file is properly closed after its suite finishes, even if an exception is raised at some point.",
+    "type": "paraphrase",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "What does f.read() return after reaching the end of a text file?",
+    "expected_answer": "An empty string.",
+    "gold_source_id": "python-inputoutput",
+    "gold_page": 5,
+    "evidence_quote": "If the end of the file has been reached, f.read() will return an empty string ('').",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Does the finally clause run if the try statement produces no exception?",
+    "expected_answer": "Yes; it runs whether or not try produces an exception.",
+    "gold_source_id": "python-errors",
+    "gold_page": 5,
+    "evidence_quote": "If a finally clause is present, the !finally clause will execute as the last task before the try statement completes. The !finally clause runs whether or not the !try statement produces an exception.",
+    "type": "condition",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "When a module is executed as a script, what is the value of __name__?",
+    "expected_answer": "__main__.",
+    "gold_source_id": "python-modules",
+    "gold_page": 3,
+    "evidence_quote": "the code in the module will be executed, just as if you imported it, but with the __name__ set to \"__main__\".",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "Which three sources initialize sys.path for module lookup?",
+    "expected_answer": "The script directory (or current directory), PYTHONPATH and the installation-dependent default.",
+    "gold_source_id": "python-modules",
+    "gold_page": 3,
+    "evidence_quote": "sys.path is initialized from these locations: * The directory containing the input script (or the current directory when no file is specified). * PYTHONPATH (a list of directory names, with the same syntax as the shell variable PATH). * The installation-dependent default (by convention including a site-packages directory, handled by the site module).",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "In the classes chapter, which variables are unique to an instance and which are shared by all instances?",
+    "expected_answer": "Instance variables are unique to each instance; class variables are shared.",
+    "gold_source_id": "python-classes",
+    "gold_page": 7,
+    "evidence_quote": "Generally speaking, instance variables are for data unique to each instance and class variables are for attributes and methods shared by all instances of the class::",
+    "type": "paraphrase",
+    "filter": {
+      "chapter": "classes"
+    },
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "How does an iterator signal that it has no remaining elements to a for loop?",
+    "expected_answer": "Its __next__ method raises StopIteration.",
+    "gold_source_id": "python-classes",
+    "gold_page": 12,
+    "evidence_quote": "When there are no more elements, iterator.__next__ raises a StopIteration exception which tells the !for loop to terminate.",
+    "type": "direct",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Which pip command writes installed packages in a format that pip install can read?",
+    "expected_answer": "python -m pip freeze.",
+    "gold_source_id": "python-venv",
+    "gold_page": 3,
+    "evidence_quote": "python -m pip freeze will produce a similar list of the installed packages, but the output uses the format that python -m pip install expects.",
+    "type": "paraphrase",
+    "filter": {},
+    "evidence_verification": "Exact normalized substring in frozen source unit; AI-authored, student review required."
+  }
+]

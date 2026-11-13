@@ -1,0 +1,40 @@
+{
+  "selected_strategy": "B",
+  "rule": "Maximum dev Evidence Hit@3, then dev Hit@1, then fewer chunks, then strategy name; freeze before test. No tuning on test.",
+  "hashes": {
+    "corpus": "9908eaff18b77fbee097f25bc6373e62c9d557b97affdf7ccffc02da77e21355",
+    "benchmark": "d7516ad58973e9ca2330eb441c1247a2a49e0267faf2a6fe6384adeeede7f243",
+    "config": "a1209f2bc100394002cc42b5164d28385a9ebeba583baa7b1816c60cbae55a9e"
+  },
+  "dev_metrics": {
+    "A/dev": {
+      "strategy": "A",
+      "split": "dev",
+      "n": 15,
+      "hit1_count": 5,
+      "hit3_count": 10,
+      "hit1": 0.3333333333333333,
+      "hit3": 0.6666666666666666
+    },
+    "B/dev": {
+      "strategy": "B",
+      "split": "dev",
+      "n": 15,
+      "hit1_count": 9,
+      "hit3_count": 12,
+      "hit1": 0.6,
+      "hit3": 0.8
+    },
+    "C/dev": {
+      "strategy": "C",
+      "split": "dev",
+      "n": 15,
+      "hit1_count": 9,
+      "hit3_count": 12,
+      "hit1": 0.6,
+      "hit3": 0.8
+    }
+  },
+  "selected_at_utc": "2026-11-13T04:37:21.022136+00:00",
+  "test_evaluated_before_selection": false
+}

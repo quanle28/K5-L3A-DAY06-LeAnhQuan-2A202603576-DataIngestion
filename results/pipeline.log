@@ -1,0 +1,15 @@
+2026-11-13 11:35:45,612 ERROR root Pipeline failed; no mock fallback used
+Traceback (most recent call last):
+  File "D:\K5-L3A-DAY06-LeAnhQuan-2A202603576-DataIngestion\starter\src\run.py", line 256, in main
+    execute(args, output)
+  File "D:\K5-L3A-DAY06-LeAnhQuan-2A202603576-DataIngestion\starter\src\run.py", line 145, in execute
+    embedder = MyEmbedder(config["model"], str(ROOT / ".cache/models"))
+  File "D:\K5-L3A-DAY06-LeAnhQuan-2A202603576-DataIngestion\starter\src\embeddings.py", line 21, in __init__
+    self.model_name = model_name
+  File "D:\K5-L3A-DAY06-LeAnhQuan-2A202603576-DataIngestion\.venv-lab\lib\site-packages\fastembed\text\text_embedding.py", line 114, in __init__
+    self.model = EMBEDDING_MODEL_TYPE(
+  File "D:\K5-L3A-DAY06-LeAnhQuan-2A202603576-DataIngestion\.venv-lab\lib\site-packages\fastembed\text\onnx_embedding.py", line 250, in __init__
+    self._model_dir = self.download_model(
+  File "D:\K5-L3A-DAY06-LeAnhQuan-2A202603576-DataIngestion\.venv-lab\lib\site-packages\fastembed\common\model_management.py", line 458, in download_model
+    raise ValueError(f"Could not load model {model.model} from any source.")
+ValueError: Could not load model BAAI/bge-small-en-v1.5 from any source.

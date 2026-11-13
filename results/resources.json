@@ -1,0 +1,50 @@
+{
+  "A": {
+    "chunk_count": 472,
+    "total_characters": 216448,
+    "total_tokens": 60818,
+    "max_tokens": 261,
+    "length_min": 64,
+    "length_mean": 458.5762711864407,
+    "length_median": 500.0,
+    "length_max": 500,
+    "chunk_and_embedding_seconds": 40.670369199999996,
+    "store_and_reingest_seconds": 4.347829500000003,
+    "count_first": 472,
+    "count_reingest": 472,
+    "api_cost_usd": 0,
+    "cache_note": "B/C share document text; embedding cache reused. Model download/probe excluded."
+  },
+  "B": {
+    "chunk_count": 281,
+    "total_characters": 196423,
+    "total_tokens": 54506,
+    "max_tokens": 429,
+    "length_min": 69,
+    "length_mean": 699.0142348754448,
+    "length_median": 777,
+    "length_max": 899,
+    "chunk_and_embedding_seconds": 44.248724599999996,
+    "store_and_reingest_seconds": 2.5466597000000064,
+    "count_first": 281,
+    "count_reingest": 281,
+    "api_cost_usd": 0,
+    "cache_note": "B/C share document text; embedding cache reused. Model download/probe excluded."
+  },
+  "C": {
+    "chunk_count": 281,
+    "total_characters": 196423,
+    "total_tokens": 54506,
+    "max_tokens": 429,
+    "length_min": 69,
+    "length_mean": 699.0142348754448,
+    "length_median": 777,
+    "length_max": 899,
+    "chunk_and_embedding_seconds": 0.008178599999993708,
+    "store_and_reingest_seconds": 2.554001999999997,
+    "count_first": 281,
+    "count_reingest": 281,
+    "api_cost_usd": 0,
+    "cache_note": "B/C share document text; embedding cache reused. Model download/probe excluded."
+  }
+}

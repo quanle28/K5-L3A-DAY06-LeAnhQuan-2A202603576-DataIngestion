@@ -1,0 +1,45 @@
+{
+  "completed_at_utc": "2026-11-13T04:37:21.881138+00:00",
+  "python": "3.9.7 (tags/v3.9.7:1016ef3, Aug 30 2021, 20:19:38) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "packages": {
+    "fastembed": "0.6.1",
+    "qdrant-client": "1.15.1",
+    "onnxruntime": "1.19.2",
+    "tokenizers": "0.22.2",
+    "numpy": "2.0.2",
+    "pypdf": "5.9.0",
+    "psycopg": "3.2.10"
+  },
+  "model": "BAAI/bge-small-en-v1.5",
+  "dimensions": 384,
+  "query_processing": "FastEmbed 0.6.1 query_embed/passage_embed; raw English text without added prefix; normalized ONNX embeddings",
+  "model_initialization_seconds": 0.7892317,
+  "elapsed_seconds": 99.71517019999999,
+  "store": "qdrant",
+  "search": "exact cosine",
+  "hashes": {
+    "corpus": "9908eaff18b77fbee097f25bc6373e62c9d557b97affdf7ccffc02da77e21355",
+    "benchmark": "d7516ad58973e9ca2330eb441c1247a2a49e0267faf2a6fe6384adeeede7f243",
+    "config": "a1209f2bc100394002cc42b5164d28385a9ebeba583baa7b1816c60cbae55a9e"
+  },
+  "api_cost_usd": 0,
+  "cost_scope": "API only; electricity/hardware/network not measured",
+  "human_audit_status": "Pending student verification; exported fields intentionally blank",
+  "command": "python -m src.run --phase all",
+  "metadata_correction": "Corrected query description after inspecting FastEmbed: no prefix was added. Vectors/metrics unchanged.",
+  "model_lock": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "repository": "qdrant/bge-small-en-v1.5-onnx-q",
+    "revision": "aa8f8b060edb00e03bfdd08813a2949946c8ba55",
+    "license": "MIT",
+    "representation": "quantized ONNX via FastEmbed 0.6.1",
+    "files_sha256": {
+      "config.json": "13582bcf2effc85b7bf3d3f5532e686bc1c9ce86bb009d10f0ec33cbe92299dd",
+      "model_optimized.onnx": "51f1bd0addd6e859e42c2c8021a5e5461385bb676a649f4b269aa445449f2431",
+      "special_tokens_map.json": "5d5b662e421ea9fac075174bb0688ee0d9431699900b90662acd44b2a350503a",
+      "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+      "tokenizer_config.json": "0b29c7bfc889e53b36d9dd3e686dd4300f6525110eaa98c76a5dafceb2029f53"
+    }
+  }
+}

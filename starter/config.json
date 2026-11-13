@@ -1,0 +1,28 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "store": "qdrant",
+  "metric": "cosine",
+  "top_k": 3,
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "size": 500,
+      "overlap": 50,
+      "filter": false
+    },
+    "B": {
+      "chunking": "paragraph",
+      "size": 900,
+      "overlap": 0,
+      "filter": false
+    },
+    "C": {
+      "chunking": "paragraph",
+      "size": 900,
+      "overlap": 0,
+      "filter": true
+    }
+  },
+  "selection_rule": "Maximum dev Evidence Hit@3, then dev Hit@1, then fewer chunks, then strategy name; freeze before test. No tuning on test.",
+  "audit_sampling": "Coherence: first 10 (document_id,page) sorted lexicographically, source offset min(750,len(text)-1); all chunks covering offset. Metadata/grounding: all five test questions and top-3 for A/B/C."
+}

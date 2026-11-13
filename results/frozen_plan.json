@@ -1,0 +1,63 @@
+{
+  "created_at_utc": "2026-11-13T04:35:05.905008+00:00",
+  "hashes": {
+    "corpus": "9908eaff18b77fbee097f25bc6373e62c9d557b97affdf7ccffc02da77e21355",
+    "benchmark": "d7516ad58973e9ca2330eb441c1247a2a49e0267faf2a6fe6384adeeede7f243",
+    "config": "a1209f2bc100394002cc42b5164d28385a9ebeba583baa7b1816c60cbae55a9e"
+  },
+  "configuration": {
+    "model": "BAAI/bge-small-en-v1.5",
+    "store": "qdrant",
+    "metric": "cosine",
+    "top_k": 3,
+    "strategies": {
+      "A": {
+        "chunking": "fixed",
+        "size": 500,
+        "overlap": 50,
+        "filter": false
+      },
+      "B": {
+        "chunking": "paragraph",
+        "size": 900,
+        "overlap": 0,
+        "filter": false
+      },
+      "C": {
+        "chunking": "paragraph",
+        "size": 900,
+        "overlap": 0,
+        "filter": true
+      }
+    },
+    "selection_rule": "Maximum dev Evidence Hit@3, then dev Hit@1, then fewer chunks, then strategy name; freeze before test. No tuning on test.",
+    "audit_sampling": "Coherence: first 10 (document_id,page) sorted lexicographically, source offset min(750,len(text)-1); all chunks covering offset. Metadata/grounding: all five test questions and top-3 for A/B/C."
+  },
+  "split": {
+    "dev": [
+      "q01",
+      "q02",
+      "q03",
+      "q04",
+      "q05",
+      "q06",
+      "q07",
+      "q08",
+      "q09",
+      "q10",
+      "q11",
+      "q12",
+      "q13",
+      "q14",
+      "q15"
+    ],
+    "test": [
+      "q16",
+      "q17",
+      "q18",
+      "q19",
+      "q20"
+    ]
+  },
+  "provenance": "AI-assisted benchmark; not human-authored or blindly human-verified."
+}

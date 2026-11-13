@@ -1,0 +1,50 @@
+{
+  "A": {
+    "coherence_ai_mean": 0.9,
+    "coherence_n": 10,
+    "grounding_ai_mean": 2,
+    "grounding_ai_counts_0_1_2": [
+      0,
+      0,
+      5
+    ],
+    "metadata_automated_correct": 15,
+    "metadata_n": 15,
+    "filter_compliance_all": "3/3",
+    "filter_compliance_test": "1/1",
+    "provenance": "Codex (AI); chưa được học viên xác nhận",
+    "warning": "Metadata automated; AI labels are not human scores."
+  },
+  "B": {
+    "coherence_ai_mean": 1.5,
+    "coherence_n": 10,
+    "grounding_ai_mean": 2,
+    "grounding_ai_counts_0_1_2": [
+      0,
+      0,
+      5
+    ],
+    "metadata_automated_correct": 15,
+    "metadata_n": 15,
+    "filter_compliance_all": "2/3",
+    "filter_compliance_test": "1/1",
+    "provenance": "Codex (AI); chưa được học viên xác nhận",
+    "warning": "Metadata automated; AI labels are not human scores."
+  },
+  "C": {
+    "coherence_ai_mean": 1.5,
+    "coherence_n": 10,
+    "grounding_ai_mean": 2,
+    "grounding_ai_counts_0_1_2": [
+      0,
+      0,
+      5
+    ],
+    "metadata_automated_correct": 15,
+    "metadata_n": 15,
+    "filter_compliance_all": "3/3",
+    "filter_compliance_test": "1/1",
+    "provenance": "Codex (AI); chưa được học viên xác nhận",
+    "warning": "Metadata automated; AI labels are not human scores."
+  }
+}

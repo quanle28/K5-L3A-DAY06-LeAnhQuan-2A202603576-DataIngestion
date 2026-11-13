@@ -1,4 +1,5 @@
-# Core setup and PDF parsing. Choose and install an embedding SDK separately.
-psycopg[binary]==3.3.8
-pypdf>=5,<7
-python-dotenv>=1,<2
+fastembed==0.6.1
+qdrant-client==1.15.1
+pypdf==5.9.0
+python-dotenv==1.1.1
+psycopg[binary]==3.2.10

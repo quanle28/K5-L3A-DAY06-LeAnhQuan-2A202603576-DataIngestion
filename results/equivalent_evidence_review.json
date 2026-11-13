@@ -1,0 +1,80 @@
+[
+  {
+    "strategy": "A",
+    "question_id": "q07",
+    "rank": 2,
+    "chunk_id": "22eeeec30320bba61c6b846677727fe14161c7f06fa0a64c5d5f98139fdb46d3",
+    "document_id": "python-controlflow",
+    "page": 6,
+    "equivalent_quote": "In fact, even functions without a return statement do return a value, albeit a rather boring one. This value is called None (it's a built-in name).",
+    "decision": "AI-proposed equivalent evidence hit",
+    "reason": "Nguồn khác xác nhận hàm không return trả None; gold chưa khai báo alternative.",
+    "reviewer": "Codex (AI); chưa được học viên xác nhận",
+    "human_confirmed": false
+  },
+  {
+    "strategy": "A",
+    "question_id": "q13",
+    "rank": 1,
+    "chunk_id": "6726f745c91a69dfca01213307c8b94d3c161a33b1d19ec282cce469b4f9adfc",
+    "document_id": "python-errors",
+    "page": 6,
+    "equivalent_quote": "After the statement is executed, the file *f* is always closed, even if a problem was encountered while processing the lines.",
+    "decision": "AI-proposed equivalent evidence hit",
+    "reason": "Có ví dụ with và file luôn đóng khi gặp lỗi; nguồn tương đương ngoài gold ban đầu.",
+    "reviewer": "Codex (AI); chưa được học viên xác nhận",
+    "human_confirmed": false
+  },
+  {
+    "strategy": "B",
+    "question_id": "q07",
+    "rank": 2,
+    "chunk_id": "5e2d251b8f3522798c2ca7cbdc7292ee4918fc60c372243ef3f4d86fc7b5f7fc",
+    "document_id": "python-controlflow",
+    "page": 6,
+    "equivalent_quote": "In fact, even functions without a return statement do return a value, albeit a rather boring one. This value is called None (it's a built-in name).",
+    "decision": "AI-proposed equivalent evidence hit",
+    "reason": "Nguồn khác xác nhận hàm không return trả None; gold chưa khai báo alternative.",
+    "reviewer": "Codex (AI); chưa được học viên xác nhận",
+    "human_confirmed": false
+  },
+  {
+    "strategy": "B",
+    "question_id": "q13",
+    "rank": 1,
+    "chunk_id": "ec96d7c2599ce8ff642836b4b9a6be803d6395be417444de8cd66ffb60dadc6c",
+    "document_id": "python-errors",
+    "page": 6,
+    "equivalent_quote": "After the statement is executed, the file *f* is always closed, even if a problem was encountered while processing the lines.",
+    "decision": "AI-proposed equivalent evidence hit",
+    "reason": "Có ví dụ with và file luôn đóng khi gặp lỗi; nguồn tương đương ngoài gold ban đầu.",
+    "reviewer": "Codex (AI); chưa được học viên xác nhận",
+    "human_confirmed": false
+  },
+  {
+    "strategy": "C",
+    "question_id": "q07",
+    "rank": 2,
+    "chunk_id": "5e2d251b8f3522798c2ca7cbdc7292ee4918fc60c372243ef3f4d86fc7b5f7fc",
+    "document_id": "python-controlflow",
+    "page": 6,
+    "equivalent_quote": "In fact, even functions without a return statement do return a value, albeit a rather boring one. This value is called None (it's a built-in name).",
+    "decision": "AI-proposed equivalent evidence hit",
+    "reason": "Nguồn khác xác nhận hàm không return trả None; gold chưa khai báo alternative.",
+    "reviewer": "Codex (AI); chưa được học viên xác nhận",
+    "human_confirmed": false
+  },
+  {
+    "strategy": "C",
+    "question_id": "q13",
+    "rank": 1,
+    "chunk_id": "ec96d7c2599ce8ff642836b4b9a6be803d6395be417444de8cd66ffb60dadc6c",
+    "document_id": "python-errors",
+    "page": 6,
+    "equivalent_quote": "After the statement is executed, the file *f* is always closed, even if a problem was encountered while processing the lines.",
+    "decision": "AI-proposed equivalent evidence hit",
+    "reason": "Có ví dụ with và file luôn đóng khi gặp lỗi; nguồn tương đương ngoài gold ban đầu.",
+    "reviewer": "Codex (AI); chưa được học viên xác nhận",
+    "human_confirmed": false
+  }
+]

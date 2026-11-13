@@ -1,0 +1,15 @@
+{
+  "metrics_identical": true,
+  "query_count": 60,
+  "top3_chunk_ids_identical": true,
+  "max_cosine_score_difference": 6.533240892725445e-08,
+  "frozen_corpus_benchmark_config_unchanged": true,
+  "selected_strategy_original": "B",
+  "selected_strategy_recheck": "B",
+  "recheck_completed_at_utc": "2026-11-13T04:47:18.236287+00:00",
+  "unit_tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "notes": "Full pipeline rerun after model revision lock and cache key correction. Same corpus, queries, model files, strategies. Recheck full artifacts are in ignored .cache/recheck."
+}

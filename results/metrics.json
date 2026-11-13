@@ -1,0 +1,56 @@
+{
+  "A/dev": {
+    "strategy": "A",
+    "split": "dev",
+    "n": 15,
+    "hit1_count": 5,
+    "hit3_count": 10,
+    "hit1": 0.3333333333333333,
+    "hit3": 0.6666666666666666
+  },
+  "A/test": {
+    "strategy": "A",
+    "split": "test",
+    "n": 5,
+    "hit1_count": 3,
+    "hit3_count": 4,
+    "hit1": 0.6,
+    "hit3": 0.8
+  },
+  "B/dev": {
+    "strategy": "B",
+    "split": "dev",
+    "n": 15,
+    "hit1_count": 9,
+    "hit3_count": 12,
+    "hit1": 0.6,
+    "hit3": 0.8
+  },
+  "B/test": {
+    "strategy": "B",
+    "split": "test",
+    "n": 5,
+    "hit1_count": 4,
+    "hit3_count": 5,
+    "hit1": 0.8,
+    "hit3": 1.0
+  },
+  "C/dev": {
+    "strategy": "C",
+    "split": "dev",
+    "n": 15,
+    "hit1_count": 9,
+    "hit3_count": 12,
+    "hit1": 0.6,
+    "hit3": 0.8
+  },
+  "C/test": {
+    "strategy": "C",
+    "split": "test",
+    "n": 5,
+    "hit1_count": 4,
+    "hit3_count": 5,
+    "hit1": 0.8,
+    "hit3": 1.0
+  }
+}
